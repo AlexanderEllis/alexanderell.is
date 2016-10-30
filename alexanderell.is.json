@@ -1,0 +1,9 @@
+{
+  apps : [{
+    watch           : true,
+    name            : "alexanderell.is",
+    script          : "/usr/local/bin/http-server",
+    args            : ["-p 8666"],
+    cwd             : "./alexanderell.is"
+  }]
+}
