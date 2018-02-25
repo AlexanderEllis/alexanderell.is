@@ -6,7 +6,7 @@
   <style>
 		body{margin:0;padding:0;width:100%;font-family:'Open Sans',sans-serif;font-weight:300}#header{position:fixed;display:none;align-items:center;justify-content:space-between;width:100%;height:55px;background-color:rgba(0,0,0,.2);opacity:0;z-index:2}#navigation{display:flex;align-items:center;height:66px;width:264px}#contact,.contact-details{align-items:center;height:66px;display:flex}@media screen and (max-width:1000px){#navigation{display:none}}#contact{width:500px}.contact-details{justify-content:center;margin-left:22px;color:#fff}.where-to{display:flex;align-items:center;width:88px;height:66px;text-align:center}.where-to p{color:#fff}#water-one{width:100%;height:100vh;margin:0 auto;background-image:url(images/background.jpeg);background-repeat:no-repeat;background-attachment:fixed;background-size:cover;-webkit-filter:grayscale(60%);filter:grayscale(60%)}#inside-water{display:flex;justify-content:center;align-items:center;width:100%;height:100vh;background-color:rgba(0,0,0,.5);animation:background 1.5s linear 1}@keyframes background{0%,50%{background-color:rgba(0,0,0,1)}100%{background-color:rgba(0,0,0,.5)}}#logo{height:50vh;width:50vh;background:url(images/logo.png) center no-repeat}@media screen and (max-width:1000px){#water-one{background-size:auto}#inside-water{animation:none}#logo{height:200px;width:200px;background-size:150% 150%;background-repeat:no-repeat}}
 	</style>
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="images/favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -19,113 +19,52 @@
 </head>
 
 <body>
+  <div id="header">
+    <div id="contact">
+      <div class="contact-details">Alex Ellis</div>
+      <div class="contact-details">Boston, MA</div>
+      <div class="contact-details">alexandermkellis at gmail</div>
+    </div>
+  </div>
 
-<div id = "header">
-	<div id = "contact">
-		<div class = "contact-details">AlexanderMKEllis@gmail.com</div>
-		<div class = "contact-details">Boston, MA</div>
-	</div>
-	<div id = "navigation">
-		<div class = "where-to" id = "to-top"><p>Top</p></div>
-		<div class = "where-to" id = "to-about"><p>About</p></div>
-		<div class = "where-to" id = "to-portfolio"><p>Portfolio</p></div>
-	</div>
-</div>
+  <div id="water-one">
+    <div id="inside-water">
+      <div id="logo"></div>
+    </div>
+  </div>
 
-<div id = "water-one">
-	<div id = "inside-water">
-		<div id = "logo"></div>
-	</div>
-</div>
+  <div id="second-page">
+    <div id="about-container">
+      <h1>My name is Alex.</h1>
+      <p>I'm a software engineer focused on front-end development, UX/UI, and design.</p>
+      <!--AKA designing the internet for sailboat money-->
+      <p>
+        I also like to draw, learn math, hack Arduinos, and write about projects, user experience, and design.
+      </p>
+    </div>
 
-<div id = "second-page">
-	<div id = "about-container">
-		<h1>My name is Alex.</h1>
-		<p>I'm a self-motivated web developer mainly focused on front-end development seeking opportunities in the intersection of web technologies and education.</p><!--AKA designing the internet for sailboat money-->
-		<p>You can learn more from these links, and you can see my portfolio below.</p>
-	</div>
+    <div id="link-container">
 
-	<div id = "link-container">
+      <div class="link-div">
+        <a class="link" href ="https://www.linkedin.com/in/alexander-ellis-b57503a1" target='_blank'>LinkedIn</a>
+      </div>
 
-		<div class = "link-div">
-			<a class = "link" href ="https://www.linkedin.com/in/alexander-ellis-b57503a1" target='_blank' >LinkedIn</a>
-		</div>
+      <div class="link-div">
+        <a class="link" href ="https://github.com/AlexanderEllis" target='_blank'>GitHub</a>
+      </div>
 
-		<div class = "link-div">
-			<a class = "link" href ="https://github.com/AlexanderEllis" target='_blank' >GitHub</a>
-		</div>
+      <div class="link-div">
+        <a class="link" href ="https://alexanderellis.github.io/blog/" target='_blank'>Blog</a>
+      </div>
 
-		<div class = "link-div">
-			<a class = "link" href ="https://www.freecodecamp.com/AlexanderEllis" target='_blank' >FreeCodeCamp</a>
-		</div>
+      <div class="link-div">
+        <a class="link" href ="http://codepen.io/lxls/" target='_blank'>CodePen</a>
+      </div>
 
-		<div class = "link-div">
-			<a class = "link" href ="http://codepen.io/lxls/" target='_blank' >CodePen</a>
-		</div>
+    </div>
+  </div>
 
-		<div class = "link-div">
-			<a class = "link" href ="AlexanderEllisResume.pdf" target='_blank'>Resume</a>
-		</div>
-	</div>
-	</div>
-
-	<div class = "divider-bar"></div>
-
-	<div id = "water-two">
-		<div id = "portfolio-title"><p>My Projects</p></div>
-		<div class = "project-card">
-			<a href = "https://github.com/AlexanderEllis/workflow" target = "_blank">
-				<div class = "example-picture" id = "workflow">	</div>
-			</a>
-			<div class = "example-info">
-				<h2>Workflow</h2>
-				<p>This is a basic task management app created with React, Node, Express, SCSS, and MongoDB.  I built this to create an easily accessible visualization of my workflow.</p>
-			</div>
-		</div>
-
-		<div class = "project-card">
-			<a href = "http://www.metrowestpharmacy.com" target = "_blank">
-				<div class = "example-picture" id = "metrowest"></div>
-			</a>
-			<div class = "example-info">
-				<h2>MetroWest Pharmacy</h2>
-				<p>Full­stack responsive website using JavaScript and HTML/CSS front­end with MongoDB, Express, and Node.js backend for local Boston company.</p>
-			</div>
-		</div>
-
-		<div class = "project-card">
-			<a href = "http://codepen.io/lxls/pen/LNBmmK" target = "_blank">
-				<div class = "example-picture" id = "interval"></div>
-			</a>
-			<div class = "example-info">
-				<h2>Tonal Interval Training</h2>
-				<p>Javascript ­based musical interval training application that plays a randomly selected interval with options for duration, pause time, and number of repeats.</p>
-			</div>
-		</div>
-
-		<div class = "project-card">
-			<a href = "http://codepen.io/lxls/pen/NNwObR" target = "_blank">
-				<div class = "example-picture" id = "pomodoro"></div>
-			</a>
-			<div class = "example-info">
-				<h2>Pomodoro Timer</h2>
-				<p>Javascript ­based pomodoro timer to help users manage time. First project using jQuery and basic DOM manipulation.</p>
-			</div>
-		</div>
-
-		<div class = "project-card">
-			<a href = "http://codepen.io/lxls/pen/pyaZbd" target = "_blank">
-				<div class = "example-picture" id = "simon"></div>
-			</a>
-			<div class = "example-info">
-				<h2>Simon Says</h2>
-				<p>Simon game with optional strict mode</p>
-			</div>
-		</div>
-
-	</div>
-
-	<div id = "footer"></div>
+  <div class="divider-bar"></div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
